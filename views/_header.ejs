@@ -15,8 +15,10 @@
         <ul class="nav navbar-nav navbar-right">
             <%if (currentZombie){%>
             <li>
+                <a href="/#">Tu role es <%= currentZombie.roles() %></a>
+            </li>
+            <li>
                 <a href="/edit">Hola, <%= currentZombie.name() %></a>
-
             </li>
             <li>
                 <a href="/logout">Salir</a>
